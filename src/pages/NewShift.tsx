@@ -48,19 +48,27 @@ const NewShift = () => {
   };
 
   return (
-    <div>
-      <div>
+    <div
+      className="bg-gray-900 flex flex-col
+    items-center min-h-screen p-4"
+    >
+      <h1 className="font-bold text-4xl text-white">Nova Ocorrência</h1>
+      <div className="mt-2">
         <input
           type="text"
           placeholder="Seu nome"
           value={guardName}
           onChange={(e) => setGuardName(e.target.value)}
+          className="bg-gray-700 placeholder:text-gray-400 text-center w-full rounded-lg p-3 text-white"
         />
       </div>
       <div>
-        <ul>
+        <ul className="bg-gray-800 p-4 rounded-lg w-full mt-4">
           {equipment.map((item) => (
-            <li key={item.id}>
+            <li
+              key={item.id}
+              className="flex items-center gap-2 text-white py-2"
+            >
               <input
                 type="checkbox"
                 checked={item.checked}
@@ -74,15 +82,21 @@ const NewShift = () => {
         </ul>
       </div>
 
-      <div>
+      <div className="w-full mt-4">
         <textarea
           placeholder="Ocorrências/Observações"
           value={notes}
           onChange={(e) => setNotes(e.target.value)}
+          className="bg-gray-700 w-full p-3 rounded-lg text-white placeholder:text-gray-400 min-h-24"
         ></textarea>
       </div>
       <div>
-        <button onClick={handleSubmit}>Confirmar</button>
+        <button
+          className="bg-blue-500 text-white px-6 py-3 rounded-md w-full mt-4"
+          onClick={handleSubmit}
+        >
+          Confirmar
+        </button>
       </div>
     </div>
   );
