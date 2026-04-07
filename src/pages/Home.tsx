@@ -30,13 +30,13 @@ const Home = () => {
 
       <div className="flex flex-col gap-3 mt-2">
         <button
-          className="bg-gray-700 text-white rounded-md cursor-pointer px-6 py-3 w-full"
+          className="bg-blue-500 text-white px-6 py-3 rounded-md w-full mt-4"
           onClick={() => navigate("/new-shift")}
         >
           Nova Ocorrência
         </button>
         <button
-          className="bg-gray-700 text-white rounded-md cursor-pointer px-6 py-3 w-full"
+          className="bg-blue-500 text-white px-6 py-3 rounded-md w-full mt-4"
           onClick={() => navigate("/history")}
         >
           Histórico
