@@ -7,31 +7,36 @@ const Home = () => {
   const lastRecord = records[0];
 
   return (
-    <div>
-      <div>
-        <h1>Registros</h1>
+    <div
+      className="bg-gray-900 flex flex-col
+    items-center min-h-screen p-4"
+    >
+      <div className="mb-4">
+        <h1 className="font-bold text-4xl text-white mb-2">Registros</h1>
       </div>
-      <div>
+      <div className="bg-gray-800 p-4 rounded-lg mb-4">
+        <h2 className="text-white font-bold text-2xl">
+          Último vigilante registrado:
+        </h2>
         {lastRecord ? (
-          <ul>
+          <ul className="bg-gray-800 text-white mt-2">
             <li>Vigilante: {lastRecord.guardName}</li>
             <li>Data: {lastRecord.date}</li>
           </ul>
         ) : (
-          <p>Nenhum registro encontrado</p>
+          <p className="text-white">Nenhum registro encontrado</p>
         )}
       </div>
-      <div>
+
+      <div className="flex flex-col gap-3 mt-2">
         <button
-          className="bg-gray-700 text-white rounded-md cursor-pointer"
+          className="bg-gray-700 text-white rounded-md cursor-pointer px-6 py-3 w-full"
           onClick={() => navigate("/new-shift")}
         >
           Nova Ocorrência
         </button>
-      </div>
-      <div>
         <button
-          className="bg-gray-700 text-white rounded-md cursor-pointer"
+          className="bg-gray-700 text-white rounded-md cursor-pointer px-6 py-3 w-full"
           onClick={() => navigate("/history")}
         >
           Histórico
