@@ -90,9 +90,15 @@ const NewShift = () => {
           className="bg-gray-700 w-full p-3 rounded-lg text-white placeholder:text-gray-400 min-h-24"
         ></textarea>
       </div>
-      <div>
+      <div className="flex gap-2 w-full mt-4">
         <button
-          className="bg-blue-500 text-white px-6 py-3 rounded-md w-full mt-4"
+          className="bg-gray-600 text-white px-4 py-3 rounded-md flex-1"
+          onClick={() => navigate("/")}
+        >
+          Voltar
+        </button>
+        <button
+          className="bg-blue-600 text-white px-4 py-3 rounded-md flex-2 font-bold"
           onClick={handleSubmit}
         >
           Confirmar
