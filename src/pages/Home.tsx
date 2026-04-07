@@ -11,9 +11,14 @@ const Home = () => {
       className="bg-gray-900 flex flex-col
     items-center min-h-screen p-4"
     >
-      <div className="mb-4">
-        <h1 className="font-bold text-4xl text-white mb-2">Registros</h1>
-      </div>
+      <header className="text-center mb-8">
+        <h1 className="text-white text-4xl font-extrabold tracking-tight">
+          GuaritaLog
+        </h1>
+        <p className="text-blue-500 font-semibold tracking-widest uppercase text-xs mt-4">
+          Passagem de Plantão
+        </p>
+      </header>
       <div className="bg-gray-800 p-4 rounded-lg mb-4">
         <h2 className="text-white font-bold text-2xl">
           Último vigilante registrado:
