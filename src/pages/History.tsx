@@ -1,9 +1,11 @@
+import { useState } from "react";
+import type { ShiftRecord } from "../types";
 import { getRecords } from "../utils/storage";
 import { useNavigate } from "react-router-dom";
 
 const History = () => {
   const navigate = useNavigate();
-  const records = getRecords();
+  const [records, _] = useState<ShiftRecord[]>(() => getRecords());
   return (
     <div
       className="bg-gray-900 flex flex-col
