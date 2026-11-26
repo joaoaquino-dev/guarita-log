@@ -4,6 +4,8 @@ Sistema web mobile-first de passagem de turno para vigilantes patrimoniais.
 
 🔗 **[Acessar aplicação](https://guarita-log.vercel.app/)**
 
+> **English:** Mobile-first shift handover web app for security officers, replacing paper logbooks with an equipment checklist, mandatory incident reports for unchecked items, and shift history (React 19, TypeScript, Tailwind CSS, Vite). Detailed documentation below is in Portuguese.
+
 ---
 
 ## O problema
