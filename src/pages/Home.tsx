@@ -5,7 +5,7 @@ import type { ShiftRecord } from "../types";
 
 const Home = () => {
   const navigate = useNavigate();
-  const [records, _] = useState<ShiftRecord[]>(() => getRecords());
+  const [records] = useState<ShiftRecord[]>(() => getRecords());
   const lastRecord = records[0];
 
   return (

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const History = () => {
   const navigate = useNavigate();
-  const [records, _] = useState<ShiftRecord[]>(() => getRecords());
+  const [records] = useState<ShiftRecord[]>(() => getRecords());
   return (
     <div
       className="bg-gray-900 flex flex-col
